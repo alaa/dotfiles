@@ -49,9 +49,7 @@ set shiftwidth=2
 " autocomplete for ruby
 autocmd FileType ruby compiler ruby
 
-" nerdtree config
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * wincmd p
+" toggle NERDTree using Ctr+n
 map <silent> <C-n> :NERDTreeToggle <CR>
 
 " set autoindent
