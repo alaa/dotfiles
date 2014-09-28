@@ -39,6 +39,40 @@ nmap <silent> <C-Down> :wincmd j<CR>
 nmap <silent> <C-Left> :wincmd h<CR>
 nmap <silent> <C-Right> :wincmd l<CR>
 
+" highlight searches
+set hlsearch
+
+" Ignore case of searches
+set ignorecase
+
+" Highlight dynamically as pattern is typed
+set incsearch
+
+" Always show status line
+set laststatus=2
+
+" Enable mouse in all modes
+set mouse=a
+
+" Disable error bells
+set noerrorbells
+
+" Don’t reset cursor to start of line when moving around.
+set nostartofline
+
+" Show the cursor position
+set ruler
+
+" Don’t show the intro message when starting Vim
+set shortmess=atI
+
+" Show the current mode
+set showmode
+
+" Show the filename in the window titlebar
+set title
+
+
 " Indentation settings
 set expandtab
 set shiftwidth=2
@@ -54,6 +88,9 @@ map <silent> <C-n> :NERDTreeToggle <CR>
 
 " set autoindent
 set smartindent
+
+" hightlight searches
+set hlsearch
 
 :set nu
 :set guifont=Monaco
