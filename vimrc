@@ -39,6 +39,7 @@ nmap <silent> <C-Down> :wincmd j<CR>
 nmap <silent> <C-Left> :wincmd h<CR>
 nmap <silent> <C-Right> :wincmd l<CR>
 
+
 " highlight searches
 set hlsearch
 
@@ -72,6 +73,14 @@ set showmode
 " Show the filename in the window titlebar
 set title
 
+" Enable the list of buffers in airline
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename in airline
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Move to the next buffer using Ctr+b
+nmap <silent> <C-B> :bNext<CR>
 
 " Indentation settings
 set expandtab
