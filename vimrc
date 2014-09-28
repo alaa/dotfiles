@@ -43,8 +43,8 @@ nmap <silent> <C-Right> :wincmd l<CR>
 " highlight searches
 set hlsearch
 
-" Ignore case of searches
-set ignorecase
+" case of searches
+set smartcase
 
 " Highlight dynamically as pattern is typed
 set incsearch
