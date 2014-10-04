@@ -19,6 +19,10 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango:Monaco, DejaVu Sans Mono 10
+font pango:Monaco, DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
+font pango:Terminus 11px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -185,3 +189,7 @@ bindsym $mod+Shift+m   exec xrandr --output HDMI1 --auto --right-of LVDS1
 
 # start the OpenVPN
 bindsym $mod+Shift+v         exec sudo service openvpn restart
+
+# set background image
+exec feh --bg-center ~/Pictures/talkischeap.png
+
