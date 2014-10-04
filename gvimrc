@@ -1,2 +1,2 @@
-set guifont=Monaco\ 13
-set linespace=4
+set guifont=Monaco\ 12
+set linespace=0
