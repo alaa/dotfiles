@@ -108,4 +108,4 @@ set hlsearch
 set cc=80
 set cursorline
 
-colorscheme badwolf
+colorscheme codeschool
