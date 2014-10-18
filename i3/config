@@ -122,9 +122,8 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Enable/Disable touchpad
-bindsym $mod+t exec "xinput set-prop 12 'Device Enabled' 0"
-bindsym $mod+Shift+t exec "xinput set-prop 12 'Device Enabled' 1"
-
+bindsym $mod+p exec "xinput set-prop 12 'Device Enabled' 0"
+bindsym $mod+Shift+p exec "xinput set-prop 12 'Device Enabled' 1"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
