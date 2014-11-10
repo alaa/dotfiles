@@ -21,6 +21,10 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-surround'
 
+" Gist
+Plugin 'mattn/webapi-vim'
+Plugin 'Gist.vim'
+
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elzr/vim-json'
@@ -88,6 +92,9 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set shiftwidth=2
+
+" copy Gist to clipboard
+let g:gist_clip_command = 'xclip -selection clipboard'
 
 " autocomplete for ruby
 autocmd FileType ruby compiler ruby
