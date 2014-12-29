@@ -28,6 +28,9 @@ Plugin 'Gist.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elzr/vim-json'
+Plugin 'tpope/vim-haml'
+
+Plugin 'ekalinin/Dockerfile.vim'
 
 call vundle#end()
 filetype plugin indent on
