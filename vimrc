@@ -29,6 +29,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-haml'
+Plugin 'fatih/vim-go'
 
 Plugin 'ekalinin/Dockerfile.vim'
 
@@ -118,4 +119,4 @@ set hlsearch
 set cc=80
 set cursorline
 
-colorscheme badwolf
+colorscheme molokai
