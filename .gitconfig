@@ -1,0 +1,86 @@
+[user]
+  email = alaa.qutaish@gmail.com
+  name = Alaa Qutaish
+[format]
+  pretty = oneline
+[log]
+  abbrevCommit = true
+[github]
+  user = alaa
+
+[alias]
+  # Shortcuts borrowed from jdavis
+  a = add
+  aa = add --all
+  ap = add --patch
+  b = branch
+  bl = blame
+  c = commit
+  cl = !git clone
+  co = checkout
+  cop = checkout --patch
+  cp = cherry-pick
+  d = diff
+  dc = diff --cached
+  dt = difftool
+  dtc = difftool --cached
+  f = fetch
+  fa = fetch --all
+  gh = !git gh-pages
+  h = help
+  l = log
+  ls = ls-files
+  m = merge
+  ma = !git master
+  mnff = merge --no-ff
+  mff = merge --ff-only
+  p = pull
+  pr = !git pull-request
+  r = remote
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbi = rebase --interactive
+  rbs = rebase --skip
+  rf = reflog
+  rs = reset
+  rv = revert
+    #s = status
+    # Default to shorter status with branch info
+  s = status -sb
+  sh = show
+  sl = shortlog
+  sm = submodule
+  st = stash
+    #su = status -uno
+    # Default to shorter status for su as well
+  su = status -s -b -uno
+  un = !git unstage
+
+    # New Commands
+  amend = commit --amend
+  count = shortlog -sn
+  ctags = !.git/hooks/ctags
+  gh-pages = checkout gh-pages
+  last = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit HEAD~10..HEAD~
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(A: %ad - C: %cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ln = log --graph --oneline --all --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(A: %ad - C: %cr) %C(bold blue)<%an>%Creset'
+  man = help
+  master = checkout master
+  sync = !git pull && git push
+  unstage = reset HEAD
+  up = "!up() { if [[ $# != 2 ]]; then echo 'git up <remote> <branch>'; exit; fi; exists=`git show-ref refs/heads/$2`; if [ -n \"$exists\" ]; then git branch -d $1/$2; fi; git branch --set-upstream-to $1/$2; }; up"
+
+    # Fixes this issue:
+    # http://stackoverflow.com/q/6089294
+  pu = !git push -u origin `git rev-parse --abbrev-ref HEAD`
+
+    # Found here: http://blog.pagebakers.nl/2009/01/29/git-ignoring-changes-in-tracked-files/
+    # Thanks to http://github.com/zdwolfe for tweeting it.
+  untrack = update-index --assume-unchanged
+  track = update-index --no-assume-unchanged
+
+    # Show Git root
+  root = rev-parse --show-toplevel
+
+    # Easy alias for pull requests
