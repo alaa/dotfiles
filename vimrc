@@ -1,5 +1,5 @@
 set nocompatible
-" filetype off
+filetype plugin on
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
@@ -26,10 +26,10 @@ Plugin 'mattn/webapi-vim'
 Plugin 'Gist.vim'
 
 Plugin 'flazz/vim-colorschemes'
+Plugin 'fatih/vim-go'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-haml'
-Plugin 'fatih/vim-go'
 
 Plugin 'ekalinin/Dockerfile.vim'
 
@@ -81,11 +81,16 @@ set showmode
 " Show the filename in the window titlebar
 set title
 
+" Enable airline fonts and symbols
+let g:airline_powerline_fonts = 1
+
 " Enable the list of buffers in airline
 let g:airline#extensions#tabline#enabled = 1
 
 " Show just the filename in airline
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+let g:go_disable_autoinstall = 0
 
 " Move to the next buffer using Ctr+b
 nmap <silent> <C-B> :bNext<CR>
@@ -119,4 +124,4 @@ set hlsearch
 set cc=80
 set cursorline
 
-colorscheme molokai
+colorscheme badwolf
