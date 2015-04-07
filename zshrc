@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/home/alaa/.rvm/gems/ruby-2.1.4/bin:/home/alaa/.rvm/gems/ruby-2.1.4@global/bin:/home/alaa/.rvm/rubies/ruby-2.1.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/alaa/.rvm/bin:/home/alaa/.rvm/bin:/home/alaa/.rvm/bin"
+export PATH="/home/alaa/.rvm/gems/ruby-2.1.4/bin:/home/alaa/.rvm/gems/ruby-2.1.4@global/bin:/home/alaa/.rvm/rubies/ruby-2.1.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/alaa/.rvm/bin:/home/alaa/.rvm/bin:/home/alaa/.rvm/bin:/opt/terraform/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -82,5 +82,4 @@ export PATH="/home/alaa/.rvm/gems/ruby-2.1.4/bin:/home/alaa/.rvm/gems/ruby-2.1.4
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
-alias ls='ls -la --color'
 alias d='docker'
