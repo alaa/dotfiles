@@ -161,6 +161,9 @@ bar {
 # load netowrk-manager applet
 exec --no-startup-id nm-applet
 
+# load audio-switcher
+exec indicator-sound-switcher
+
 # Auto lock
 exec xautolock -time 5 -locker screenlock`
 
@@ -183,12 +186,11 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Multi-Monitor command bindings
-bindsym $mod+m         exec xrandr --output HDMI1 --off
-bindsym $mod+Shift+m   exec xrandr --output HDMI1 --auto --right-of LVDS1
+bindsym $mod+m         exec xrandr --output DP1 --off
+bindsym $mod+Shift+m   exec xrandr --output DP1 --auto --right-of LVDS1
 
 # start the OpenVPN
 bindsym $mod+Shift+v         exec sudo service openvpn restart
 
 # set background image
-exec feh --bg-center ~/Pictures/talkischeap.png
-
+exec feh --bg-center ~/Pictures/mountain.jpg
